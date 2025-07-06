@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'ecommerce-backend-b0r3.onrender.com',         # Backend domain on Render
-    'e-commerce-frontend-y23n-sipun-s-projects.vercel.app',  # Frontend (no https://)
+    'e-commerce-frontend-1lmv4y07i-sipun-s-projects.vercel.app',  # Frontend (no https://)
     'localhost',
     '127.0.0.1'
 ]
