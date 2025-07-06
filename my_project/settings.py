@@ -171,6 +171,8 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/images/' # to load media files on admin page as well (changes in url.py file also, project level)
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),] # new
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 
 # user uploaded media or image gets uploaded at this media root (which is static/images folder)
 MEDIA_ROOT = 'static/images'
