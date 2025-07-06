@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-*7!!kc@bmtx8ngui6lr@xmifmcwm6y%hnbe)rdei(b!ds8t)uq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ecommerce-backend-b0r3.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ecommerce-backend-b0r3.onrender.com', 'localhost', '127.0.0.1','https://e-commerce-frontend-5e6oe913m-sipun-s-projects.vercel.app/']
 
 
 
