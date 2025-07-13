@@ -29,10 +29,10 @@ SECRET_KEY = 'django-insecure-*7!!kc@bmtx8ngui6lr@xmifmcwm6y%hnbe)rdei(b!ds8t)uq
 DEBUG = True
 
 ALLOWED_HOSTS = [
-            # Backend domain on Render
-    'shopecommerc.netlify.app',  # Frontend (no https://)
-    'localhost',
-    '127.0.0.1'
+    'shopecommerc.netlify.app',  # ✅ Netlify frontend (no https://)
+    'localhost',                 # ✅ Localhost development
+    '127.0.0.1',                 # ✅ Localhost with IP
+    '.ondigitalocean.app',       # ✅ (optional) if deploying on DigitalOcean
 ]
 
 
@@ -100,7 +100,9 @@ DATABASES = {
     }
 }
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+    'default': dj_database_url.config(
+        default=os.getenv("DATABASE_URL")
+    )
 }
 
 
