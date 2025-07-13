@@ -33,11 +33,11 @@ class ProductCreateView(APIView):
         data = request.data
 
         product = {
-            "name": data["name"],
-            "description": data["description"],
-            "price": data["price"],
-            "stock": data["stock"],
-            "image": data["image"],
+            "name": data.get("name"),
+            "description": data.get("description"),
+            "price": data.get("price"),
+            "stock": data.get("stock"),
+            "image": request.FILES.get("image"),
         }
 
         serializer = ProductSerializer(data=product, many=False)
