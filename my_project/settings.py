@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-*7!!kc@bmtx8ngui6lr@xmifmcwm6y%hnbe)rdei(b!ds8t)uq
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'ecommerce-backend-b0r3.onrender.com',         # Backend domain on Render
+            # Backend domain on Render
     'shopecommerc.netlify.app',  # Frontend (no https://)
     'localhost',
     '127.0.0.1'
