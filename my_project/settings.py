@@ -29,10 +29,10 @@ SECRET_KEY = 'django-insecure-*7!!kc@bmtx8ngui6lr@xmifmcwm6y%hnbe)rdei(b!ds8t)uq
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'shopecommerc.netlify.app',  # ✅ Netlify frontend (no https://)
-    'localhost',                 # ✅ Localhost development
-    '127.0.0.1',                 # ✅ Localhost with IP
-    '.ondigitalocean.app',       # ✅ (optional) if deploying on DigitalOcean
+    'shopecommerc.netlify.app',   # ✅ Frontend domain (Netlify, without https://)
+    'my_project.ondigitalocean.app',  # ✅ Your actual backend domain (DigitalOcean App Platform)
+    'localhost',                  # ✅ Local testing
+    '127.0.0.1',                  # ✅ Local IP access
 ]
 
 
